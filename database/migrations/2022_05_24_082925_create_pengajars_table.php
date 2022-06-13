@@ -16,6 +16,10 @@ return new class extends Migration
         Schema::create('pengajars', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('nip');
+            $table->string('nama');
+            $table->string('jenis_kelamin');
+            $table->string('alamat');
         });
     }
 

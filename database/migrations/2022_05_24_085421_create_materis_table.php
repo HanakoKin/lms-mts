@@ -16,6 +16,8 @@ return new class extends Migration
         Schema::create('materis', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('deskripsi');
+            $table->time('tanggal_upload')->nullable();
         });
     }
 

@@ -16,6 +16,8 @@ return new class extends Migration
         Schema::create('jadwal_pelajarans', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->date('hari')->nullable();
+            $table->time('tanggal')->nullable();
         });
     }
 

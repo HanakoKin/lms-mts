@@ -16,6 +16,8 @@ return new class extends Migration
         Schema::create('absens', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->date('tanggal_absen')->nullable();
+            $table->time('jam_absen')->nullable();
         });
     }
 
